@@ -13,7 +13,7 @@ type Group = {
   
         {/* テキスト＋進捗バー */}
         <div className="flex-1">
-          <div className="text-base mb-2">{group.name}</div>
+          <div className="text-base mb-2 text-black">{group.name}</div>
   
           <div className="flex items-center gap-2">
             <div className="flex-1 h-1.5 rounded-full bg-gray-200 overflow-hidden">
@@ -22,10 +22,9 @@ type Group = {
                 style={{ width: `${group.progress}%` }}
               />
             </div>
-            <div className="text-xs text-gray-700">{group.progress}%</div>
+            <div className="text-xs text-black">{group.progress}%</div>
           </div>
         </div>
       </div>
     );
   }
-  
