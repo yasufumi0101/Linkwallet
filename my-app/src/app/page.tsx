@@ -1,14 +1,7 @@
-import TravelCardCarousel from "@/components/TravelCardCarousel";
-
-export default function HomePage() {
+export default function Home() {
   return (
-    <div className="min-h-screen bg-[#E6FAF4] flex flex-col items-center">
-      {/* 上の通知アイコンとかヘッダーはここに置く */}
-      <div className="mt-10 mb-4 w-full flex justify-end pr-10 text-gray-500">
-        <span className="material-symbols-outlined !text-4xl">notifications</span>
-      </div>
-
-      <TravelCardCarousel />
+    <div className="flex items-center justify-center h-screen text-3xl text-blue-500">
+      Hello LinkWallet!
     </div>
   );
 }
