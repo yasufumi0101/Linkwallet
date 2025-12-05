@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import Link from "next/link";
 
 type TravelCard = {
   title: string;
@@ -82,9 +83,11 @@ function TravelCard({ title, progress }: TravelCard) {
 
       {/* ボタン */}
       <div className="flex justify-center">
-        <button className="px-6 py-2 rounded-full border border-purple-200 text-xs text-purple-500 bg-purple-50">
-          ポイント購入
-        </button>
+        <Link href="/points/purchase">
+          <button className="px-6 py-2 rounded-full border border-purple-200 text-xs text-purple-500 bg-purple-50">
+            ポイント購入
+          </button>
+        </Link>
       </div>
     </div>
   );
