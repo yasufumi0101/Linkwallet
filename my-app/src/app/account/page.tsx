@@ -20,7 +20,9 @@ export default function AccountPage() {
   return (
     <main className="min-h-screen bg-[#E6F7EC] flex flex-col items-center px-6 pt-16 pb-24">
       {/* ページタイトル */}
-      <h1 className="text-sm text-gray-700 mb-6">アカウント</h1>
+      <div className="w-full px-4 mx-auto">
+        <h1 className="text-xl text-gray-700 mb-6 text-left font-bold">アカウント</h1>
+      </div>
 
       <div className="w-full max-w-xs space-y-6">
         {/* アカウントカード */}
